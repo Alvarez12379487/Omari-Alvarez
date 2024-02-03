@@ -61,3 +61,5 @@ client.on(Events.MessageCreate, async (message) => {
     console.log("response", response.data.choices[0].text)
     await message.channel.send(response.data.choices[0].text)
 })
+
+client.login(process.env.TOKEN); // login bot using token
