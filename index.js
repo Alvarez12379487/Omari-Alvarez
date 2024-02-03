@@ -1,7 +1,7 @@
 const { Client, Events, GatewayIntentBits } = require("discord.js")
 require("dotenv/config")
 const { OpenAIApi, Configuration } = require("openai")
-
+const keep_alive = require('./keep_alive.js')
 const config = new Configuration({
     apiKey: process.env.OPENAI_KEY
 })
